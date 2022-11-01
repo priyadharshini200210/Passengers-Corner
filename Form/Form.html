@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+
+    <link rel="stylesheet" href="./Form.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="contact-form">
+        <div class="form-wrapper">
+            <form action="https://formsubmit.co/ranjithkumare.20cse@kongu.edu" method="POST">
+                <div class="section-head">
+                    <h2>Complaint Us</h2>
+                    <img src="./Pic.png" alt="">
+                </div>
+                <div class="input-fields">
+                    <div class="input-box">
+                        <input type="text" name="Name" class="form_input" placeholder=" " required>
+                        <label for="" class="form_label">Name</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="Email" class="form_input" placeholder=" " required>
+                        <label for="" class="form_label">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <select for="" name="Grievance on" class="form_label" required>
+                            <option value="none" selected disabled hidden>Select the Grievance</option>
+                            <option value="Service">Service</option>
+                            <option value="">Maintainance</option>
+                            <option value="">Staffs</option>
+                            <option value="">Timing</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <textarea name="Complaint" cols="20" rows="5" class="form_input" placeholder=" "
+                            required></textarea>
+                        <label for="" class="form_label">Grievance</label>
+                    </div>
+                </div>
+                <div class="input-submit">
+                    <input type="submit" value="Send Message">
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #48DBFB;
+}
+
+.contact-form {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "roboto";
+    font-weight: 500;
+    overflow: hidden;
+    position: relative;
+}
+
+.section-head{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-head h2{
+    color: #16336d;
+}
+
+.section-head img{
+    width: 15vh;
+    height: 10vh;
+    border-radius: 10px;
+}
+
+.form-wrapper {
+    width: 80%;
+    display: flex;
+    bottom: 0px;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 5px;
+    align-items: center;
+    position: absolute;
+}
+
+.contact-form form {
+    width: 100%;
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-fields {
+    width: auto;
+    height: 55vh;
+    padding: 20px;
+    border-radius: 6px;
+    transition: .3s linear;
+}
+
+.input-fields .input-box {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-fields .input-box input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    font-size: 13px;
+    transition: all 0.3 ease;
+    background: none;
+    z-index: 1;
+}
+
+.input-fields select {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    font-size: small;
+    padding: 5px;
+    color: #16336d;
+    transition: all 0.3 ease;
+    background: none;
+    z-index: 1;
+}
+
+.input-fields .input-box label {
+    position: absolute;
+    left: 1rem;
+    top: 0.8rem;
+    padding: 0 .15rem;
+    background-color: #fff;
+    color: #80868B;
+    transition: .2s;
+}
+
+.form_label {
+    font-family: sans-serif;
+    color: black;
+    font-size: small;
+}
+
+.input-box input:focus {
+    border: 2px solid #16336d;
+}
+
+.form_input:focus+.form_label {
+    top: -.5rem;
+    left: .8rem;
+    color: #16336d;
+    font-size: small;
+    font-weight: 500;
+    z-index: 10;
+}
+
+.form_input:not(:placeholder-shown).form_input:not(:focus)+.form_label {
+    top: -.5rem;
+    left: .8rem;
+    font-size: small;
+    font-weight: 500;
+    z-index: 10;
+}
+
+
+.input-box input[type=text] {
+    color: black;
+    padding: 0.75em;
+}
+
+.input-fields .input-box textarea {
+    width: 100%;
+    height: 20vh;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    font-size: 13px;
+    transition: all 0.3 ease;
+    color: #16336d;
+    font-weight: 500;
+    padding: 0.75em;
+}
+
+.input-submit {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.input-submit input {
+    width: 80%;
+    height: 80%;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-color: #16336d;
+    color: white;
+    border-bottom-width: 2px;
+    font-size: 15px;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.input-submit input:hover {
+    box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+    background-color: #f35b04;
+}
